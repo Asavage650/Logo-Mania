@@ -1,8 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-// const generateLogo = require("./lib/generateLogo");
 const { Triangle, Square, Circle } = require("./lib/shapes");
-// const { ifError } = require("assert");
 const questions = [
   {
     type: "list",
@@ -33,7 +31,7 @@ function writeToFile(fileName, data) {
   svgString =
     '<svg xmlns="http://www.w3.org/2000/svg” version="1.1" width="300" height="200">';
 
-  svgString += "<g>";
+  // svgString += "<g>";
 
   svgString += `${data.shapes}`;
 
@@ -50,7 +48,7 @@ function writeToFile(fileName, data) {
   }
 
   svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${data.textColor}">${data.text}</text>`;
-  svgString += "</g>";
+  // svgString += "</g>";
   svgString += "</svg>";
 
   fs.writeFile(fileName, svgString, function (error) {
