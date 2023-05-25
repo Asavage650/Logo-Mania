@@ -1,11 +1,11 @@
-const { Triangle, Sqaure, Circle } = require("../lib/shapes");
+const { Triangle, Square, Circle } = require("../lib/shapes");
 
 describe("Circle test", () => {
   test("test for a circle with a pink background", () => {
     const shape = new Circle();
     shape.setColor("pink");
     expect(shape.render()).toEqual(
-      '<circle cx="150" cy="115" r="80" fill="pink" />'
+      '<circle cx="150" cy="115" r="80" fill="pink"/>'
     );
   });
 });
@@ -14,16 +14,16 @@ describe("Triangle test", () => {
     const shape = new Triangle();
     shape.setColor("blue");
     expect(shape.render()).toEqual(
-      '<polygon points="150, 18 244, 182 56, 182" fill="blue" />'
+      '<polygon points="150, 18 244, 182 56, 182" fill="blue"/>'
     );
   });
 });
 describe("Square test", () => {
   test("test for a square with a red background", () => {
-    const shape = new Sqaure();
+    const shape = new Square();
     shape.setColor("red");
     expect(shape.render()).toEqual(
-      '<circle cx="150" cy="115" r="80" fill="red" />'
+      '<rect x="73" y="40" width="300" height="200" fill="red"/>'
     );
   });
 });
