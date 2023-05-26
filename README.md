@@ -48,8 +48,10 @@ User should input npm run test to test the code
 
 ## Recording
 
+https://drive.google.com/file/d/1pT5d-u004LWv99KfpbNHbDGLyCPDNh8S/view
+
 ## Questions
 
 If you have any questions please contact me through
 Github: https://github.com/Asavage650 Username: Asavage650
-Logo Mania Repo:
+Logo Mania Repo: https://github.com/Asavage650/Logo-Mania
